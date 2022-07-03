@@ -1,0 +1,91 @@
+/*ID ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.Flex {
+    display: flex;
+    align-items: flex-end;
+}
+.Container {
+    margin: 0 auto;
+    background-color: rgb(240, 11, 11);
+}
+
+
+/*Smathphone Portrait ===================================================================================================*/
+/*HEADER*/
+header {
+    height: 150px;
+    background-color: #ff0;
+}
+#logo img {
+    height: 110px;
+}
+#menu {
+    display: none;
+}
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 30px;
+    right: 15px;
+    color: #ff0;
+}
+nav ul {
+    list-style: none;
+    background-color: rgb(58, 253, 195);
+    position: fixed;
+    opacity: 0.8;
+    top: 70px;
+    right: -110%;
+    width: 30%;
+    transition: all 0.5s;
+    border-radius: 25px;
+}
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #5e8933;
+}
+nav ul li a {
+    text-decoration: none;
+    color: crimson;
+}
+#menu:checked ~ ul {
+    right: 0;
+}
+
+/*PC ====================================================================================================================================*/
+@media (min-width: 1200px){
+.Container {
+    max-height: 150px;
+}
+/*.Flex {
+    display: flex;
+    justify-content: space-between;
+}*/
+header {
+    height: 150px;
+}
+#logo img {
+    width: 150px;
+    height: 150px;
+}
+label {
+    display: none;
+}
+nav ul {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+nav ul li {
+    float: left;
+    border: 0;
+}
+nav ul li a {
+    color: #ff0;
+}
+nav ul li a:hover {
+    color: #ff0;
+}
+}
